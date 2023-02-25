@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+/* Style the header */
+header {
+    background-color: darkslateblue;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.title{
+    display: inline-block;
+    /*padding-right: 10px;*/
+    width: 80%;
+}
+
+.sair{
+    float: left;
+    display: inline-block;
+    /*width: 20%;*/
+    text-align: left;
+    padding-left: 40px;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 30%;
+    min-height: 1200px; /* only for demonstration, should be removed */
+    background: DodgerBlue;
+    padding: 20px;
+    margin: 0px auto 0px auto;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: steelblue;
+    min-height: 1200px; /* only for demonstration, should be removed */
+    height: 100%;
+    margin: 0px auto 0px auto;
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+}
+
+input, select{
+    display: block;
+    margin: 20px;
+    height: 50px;
+    width: 500px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form{
+    float: left;
+    margin-left: 200px;
+}
+
+form.LivrosELocador{
+    margin-left: 100px;
+}
+
+.LivrosELocador{
+    width: 700px;
+}
+
+a, li{
+    margin: 20px;
+    font-size: 30px;
+    box-decoration-break: slice;
+    border: 1px black;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+p {
+    font-size: 30px;
+    margin: 20px;
+}
+.p_rodape{
+    font-size: 30px;
+    margin: 20px;
+}
+
+table {
+    float: left;
+    width: 500px;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+
+.tabela1{
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.tabela2{
+    margin-left: 0px;
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.tabelaIndexGerente
+{
+    margin-top: 50px;
+    margin-left: 100px;
+    width: 800px;
+}
+
+th, tr {
+    font-size: 22px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+.vencidos{
+    color: red;
+}
+
+.proxPrazo{
+    color: yellow;
+}
+
+.noPrazo{
+    color: greenyellow;
+}

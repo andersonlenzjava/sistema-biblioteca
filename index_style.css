@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: steelblue;
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Style the header */
+header {
+    background-color: darkslateblue;
+    padding: 30px 0px 30px 0px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+.title{
+    display: inline-block;
+    width: 80%;
+}
+
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+    float: left;
+    width: 20%;
+    height: 700px; /* only for demonstration, should be removed */
+    background: DodgerBlue;
+    padding: 20px;
+    margin: 0px auto 0px auto;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+main {
+    width: 600px;
+    background-color: steelblue;
+    margin: 50px auto;
+}
+
+form, input {
+    alignment: center;
+    margin: 50px auto 0px auto;
+}
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+input {
+    display: block;
+    margin: 20px auto 0px auto;
+    height: 50px;
+    width: 400px;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+a {
+    display: block;
+    alignment: center;
+    margin: 20px auto 0px auto;
+    text-align: center;
+    font-size: 30px;
+    box-decoration-break: slice;
+    border: 1px black;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
